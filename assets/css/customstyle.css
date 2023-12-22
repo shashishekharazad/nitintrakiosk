@@ -1,5 +1,4 @@
-
-.form-container{
+.form-container {
     position: relative;
     min-height: 350px;
     max-width: 1080px;
@@ -11,17 +10,18 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.imp{
+.imp {
     color: #fd0000;
 }
-.form-container headers{
+
+.form-container headers {
     position: relative;
     font-size: 20px;
     font-weight: 600;
     /* color: #333; */
 }
 
-.form-container headers::before{
+.form-container headers::before {
     content: "";
     position: absolute;
     left: 0;
@@ -32,18 +32,19 @@
     background-color: #4070f7;
 }
 
-.form-container form{
+.form-container form {
     position: relative;
     margin-top: 16px;
     min-height: 350px;
     /* background-color: #fff; */
 }
 
-.form-container form .details{
+.form-container form .details {
     margin-top: 30px;
 }
 
-.form-container form .title, .title{
+.form-container form .title,
+.title {
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -52,26 +53,28 @@
     /* color: rgb(29, 28, 28); */
 }
 
-.form-container form .fields{
+.form-container form .fields {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-form .fields .input-field{
+form .fields .input-field {
     display: flex;
     width: calc(100% / 2 - 10px);
     flex-direction: column;
     margin: 4px 0;
 }
 
-.input-field label{
+.input-field label {
     font-size: 14px;
     font-weight: 500;
     /* color: #2e2e2e; */
 }
-.input-field select, input{
+
+.input-field select,
+input {
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -83,22 +86,23 @@ form .fields .input-field{
     margin: 8px 0;
 }
 
-.input-field input::is(:focus, :valid){
+.input-field input::is(:focus, :valid) {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
 
-.input-field input[type="date"]{
+.input-field input[type="date"] {
     color: #707070;
 }
-.input-field input[type="date"]:valid{
+
+.input-field input[type="date"]:valid {
     color: #333;
 }
 
-.input-field input[type="file"]{
+.input-field input[type="file"] {
     border-style: none;
 }
 
-.form-container form .button{
+.form-container form .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,30 +117,30 @@ form .fields .input-field{
     background-color: #4070f7;
 }
 
-form button:hover{
+form button:hover {
     background-color: #0341eb;
 }
 
-form .button i{
+form .button i {
     margin: 0 6px;
 }
 
-form .buttons{
+form .buttons {
     display: flex;
     align-items: center;
 }
 
-form .buttons .button{
+form .buttons .button {
     margin-right: 14px;
 }
 
 @media (max-width: 700px) {
-    form .fields .input-field{
+    form .fields .input-field {
         width: 100%;
-    }   
+    }
 }
 
-.society-container{
+.society-container {
     display: flex;
     flex-wrap: wrap;
     margin-left: 3%;
@@ -144,30 +148,39 @@ form .buttons .button{
 }
 
 .container {
-  position: relative;
-  max-width: 200PX;
+    position: relative;
+    max-width: 200PX;
 }
 
 .societies {
-  object-fit: cover;
-  object-position: bottom;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+    opacity: 1;
+}
+
+.festivals {
+    width: 290px;
+    height: 165px;
+}
+
+.align-rt {
+    min-height: 150px;
 }
